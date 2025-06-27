@@ -1,0 +1,8 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+footer {
+    letter-spacing: 0.5px;
+    font-size: 1.05rem;
+}
+.w-md-50 { max-width: 400px; }

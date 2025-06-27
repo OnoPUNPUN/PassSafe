@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block title %}Add Password - PassSafe{% endblock %}
+{% block content %}
+<h2>Add Password</h2>
+<form method="post" class="w-100 w-md-50 mx-auto">
+    <div class="mb-3">
+        <label for="site" class="form-label">Site</label>
+        <input required class="form-control" type="text" name="site" id="site">
+    </div>
+    <div class="mb-3">
+        <label for="login" class="form-label">Login</label>
+        <input required class="form-control" type="text" name="login" id="login">
+    </div>
+    <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input required class="form-control" type="text" name="password" id="password">
+    </div>
+    <button class="btn btn-primary" type="submit">Add</button>
+</form>
+{% endblock %}

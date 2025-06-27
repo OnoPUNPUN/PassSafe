@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block title %}Dashboard - PassSafe{% endblock %}
+{% block content %}
+<h2>Your Saved Passwords</h2>
+<a class="btn btn-success mb-3" href="{{ url_for('add') }}">Add New</a>
+<table class="table table-bordered bg-white">
+    <thead>
+        <tr>
+            <th>Site</th>
+            <th>Login</th>
+            <th>Password</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for pw in passwords %}
+        <tr>
+            <td>{{ pw["site"] }}</td>
+            <td>{{ pw["login"] }}</td>
+            <td>{{ pw["password"] }}</td>
+            <td>
+                <a class="btn btn-sm btn-warning" href="{{ url_for('edit', id=pw['id']) }}">Edit</a>
+                <a class="btn btn-sm btn-danger" href="{{ url_for('delete', id=pw['id']) }}" onclick="return confirm('Are you sure?');">Delete</a>
+            </td>
+        </tr>
+        {% else %}
+        <tr>
+            <td colspan="4" class="text-center">No passwords saved.</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
