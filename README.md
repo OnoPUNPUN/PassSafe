@@ -9,12 +9,17 @@
 
 ## ✨ Features
 
-- 🔒 **Secure Storage** - Your passwords are safely encrypted and stored
+- 🔒 **Secure Storage** - Your passwords are safely encrypted and stored  
 - 🎨 **Modern UI** - Clean, dark-themed interface for better user experience  
-- 👤 **User Authentication** - Secure login and registration system
-- ➕ **Easy Management** - Add, edit, and delete passwords with ease
-- 📱 **Responsive Design** - Works seamlessly on desktop and mobile
-- 🚀 **Fast & Lightweight** - Built with Flask for optimal performance
+- 👤 **User Authentication** - Secure login and registration system  
+- ➕ **Easy Management** - Add, edit, and delete passwords with ease  
+- 📱 **Responsive Design** - Works seamlessly on desktop and mobile  
+- 🚀 **Fast & Lightweight** - Built with Flask for optimal performance  
+
+## 🎥 Demo
+
+Curious how it works in action?  
+Watch the YouTube walkthrough: **[PassSafe Demo](https://youtu.be/K_3QWiA3fGo)**
 
 ## 🖼️ Screenshots
 
